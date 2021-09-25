@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <h1>Crie uma conta</h1>
+                <p>Cadastre-se para participar da comunidade!</p>
+                <br>
+                <div class="campo">
+                    <input type="text" name="nome" id="nome" class="entrada" required>
+                    <label for="nome" class="nomeCampo">Nome</label>
+                </div>
+                
+                <br><br>
+                
+                <div class="campo">
+                    <input type="email" name="email" id="email" class="entrada" required>
+                    <label for="email" class="nomeCampo">Email</label>
+                </div>
+                <br><br>
+                <div class="campo">
+                    <input type="tel" name="telefone" id="telefone" class="entrada" required>
+                    <label for="telefone" class="nomeCampo">Telefone para contato</label>
+                </div>
+                <br><br>
+                <div class="campo">
+                    <input type="text" name="endereco" id="endereco" class="entrada" required>
+                    <label for="endereco" class="nomeCampo">Endereço</label>
+                </div>
+                <br>
+                <div class="campo">
+                    <label for="representa" class="pergunta">O que você representa?</label>
+                    <select id="representa">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Empresa</option>
+                        <option>Instituição</option>
+                        <option>Outro</option>
+                    </select><br><br>
+                </div>
+                <div class="campo">
+                    <label for="regiao" class="pergunta">Região administrativa: </label>
+                    <select id="regiao">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Ceilândia</option>
+                        <option>Plano Piloto</option>
+                        <option>Taguatinga</option>
+                        <option>Lago Sul</option>
+                        <!-- inserir o restante das opcoes -->
+                    </select><br><br>
+                </div>
+                <div class="campo">
+                    <input id="senha" type="password" class="entrada" required>
+                    <label for="senha" class="nomeCampo">Nova senha</label>
+                </div><br>
+
+                <div class="campo">
+                    <label for="detalhe">Conte o que te trouxe aqui:</label>
+                    <textarea rows="5" cols="40" id="detalhe" name="detalhe"></textarea>
+                </div><br>
+
+                <button type="submit" name="conclui" id="conclui">Concluído</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
+
