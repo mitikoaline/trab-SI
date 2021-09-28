@@ -1,0 +1,182 @@
+body{
+    font-family: Source Serif Pro;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.navlinks{
+    list-style: none;
+    display: flex;
+}
+
+.navlinks li{
+    padding: 0px 20px;
+}
+
+.logo{
+    color: #0F6C29;
+    font-family: "Merienda One";
+    font-size: 40px;
+    margin-right: auto;
+}
+
+.cta{
+    font-family: Source Serif Pro;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cta_link{
+    font-family: Source Serif Pro;
+    font-weight: 500;
+    color: #268133;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    text-decoration: underline;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cta:hover{
+    color: #268133;
+    text-decoration: underline;
+}
+
+h1{
+    margin-top: 12px;
+    margin-bottom: -12px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+h2{
+    margin-top: 12px;
+    margin-bottom: -12px;
+    font-size: 50px;
+    font-weight:bold;
+}
+
+a:link{
+    color: #2E4231;
+}
+
+p{
+    margin-top: 12px;
+}
+
+.box{
+    color: #2E4231;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(254, 254, 254, 0.60);
+    padding: 4px;
+    border-radius: 15px;
+    /* width: 30%; */
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25);   /* offset-x | offset-y | blur-radius | color */
+}
+
+.botao{
+    position: absolute;
+}
+
+fieldset{
+    /* border: 2px solid #000000; */
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    width: 25vw;
+}
+
+.campo{
+    position: relative;
+}
+
+.pergunta{
+    font-size: 18px;
+}
+
+.entrada{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 100%;
+}
+
+.nomeCampo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: rgba(46, 66, 49, 0.7);
+}
+
+.entrada:focus ~ .nomeCampo,
+.entrada:valid ~ .nomeCampo{
+    top: -20px;
+    font-size: 12px;
+    color: #2E4231;
+    font-weight: bold;
+}
+
+#representa, #regiao{
+    /* border: none; */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    width: 10em;
+}
+
+#conclui{
+    background-color: rgba(62, 100, 68, 0.83);
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+    width: 15em;
+    font-family: Source Serif Pro;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1b251d;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);   /* offset-x | offset-y | blur-radius | color */
+}
+
+#conclui:hover{
+    background: #69a36f;
+    /* box-shadow: inset 2px 2px 2 px rgba(0, 0, 0, 0.2); */
+    text-shadow: none;
+}
+
+#conclui:active{
+    background-color: rgba(62, 100, 68, 0.83);
+}
+
+#conclui, select{
+    cursor: pointer;
+}
+
+#detalhe{
+    resize: none;
+}
