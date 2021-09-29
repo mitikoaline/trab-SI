@@ -20,7 +20,7 @@
         </nav>
     </header> -->
     <div class="box">
-        <form action="">
+        <form action="/cadastrado" method="POST">
             <fieldset>
                 <h1>Crie uma conta</h1>
                 <p>Cadastre-se para participar da comunidade!</p>
@@ -49,7 +49,7 @@
                 <br>
                 <div class="campo">
                     <label for="representa" class="pergunta">O que você representa?</label>
-                    <select id="representa">
+                    <select name= "representa" id="representa">
                         <option selected disabled value="">Selecione</option>
                         <option>Empresa</option>
                         <option>Instituição</option>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="campo">
                     <label for="regiao" class="pergunta">Região administrativa: </label>
-                    <select id="regiao">
+                    <select name= "regiao" id="regiao">
                         <option selected disabled value="">Selecione</option>
                         <option>Ceilândia</option>
                         <option>Plano Piloto</option>
@@ -68,7 +68,7 @@
                     </select><br><br>
                 </div>
                 <div class="campo">
-                    <input id="senha" type="password" class="entrada" required>
+                    <input id="senha" name="senha" type="password" class="entrada" required>
                     <label for="senha" class="nomeCampo">Nova senha</label>
                 </div><br>
 

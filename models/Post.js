@@ -2,7 +2,8 @@ const db = require('./database.js')
 
 const Post = db.sequelize.define('usuario', {
     email:{
-        type: db.Sequelize.STRING
+        type: db.Sequelize.STRING,
+        unique: true
     },
     telefone:{
         type: db.Sequelize.STRING
@@ -24,5 +25,16 @@ const Post = db.sequelize.define('usuario', {
     }
 });
 
+const News = db.sequelize.define('novidade',{
+    nome:{
+        type: db.Sequelize.STRING
+    },
+    descricao:{
+        type: db.Sequelize.TEXT
+    }
+});
+
 Post.sync({force:true});
-module.exports = Post;
+News.sync({force:true});
+
+module.exports = Post, News;

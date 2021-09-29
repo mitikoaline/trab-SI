@@ -1,14 +1,34 @@
 const express = require('express');
-const app = express()
-const Post = require('./models/Post')
-const bodyparser = require('body-parser')
+const app = express();
+const Post = require('./models/Post');
+var session = require('express-session');
+const bodyparser = require('body-parser');
+const { Op } = require("sequelize");
 
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({extended: false}));
+app.use(session({secret: 'siclo123'}));
+app.use(express.urlencoded({extended: false}));
 
 app.use('/css', express.static('css'));
 app.get("/cadastro", function(req,res){
     res.sendFile(__dirname + "/html/cadastro.html");
+});
+
+app.post("/", async function(req, res){
+    var a = await Post.count({where:{email: {[Op.eq]: req.body.email}, senha: {[Op.eq]: req.body.senha}}});
+    if(a == 1){
+        req.session.email = req.body.email
+        res.send("Usuario logado");
+    }else{
+        res.send("Nenhum usuario logado");
+    }
+});
+
+app.get("/", (req, res)=>{
+    if(req.session.email){
+        res.send("Usuario logado");
+    }else{
+        res.send("Nenhum usuario logado");
+    }
 });
 
 app.get("/login", function(req, res){
@@ -29,7 +49,7 @@ app.post("/cadastrado", function(req, res){
     }).catch(function(erro){
         res.send("ERRO:" + erro);
     });
-    // console.log(req.body); DEBUG
+    console.log(req.body);
 })
 
 app.listen(3000);

@@ -180,3 +180,29 @@ fieldset{
 #detalhe{
     resize: none;
 }
+
+
+.updates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.update{
+    margin-top: 40px;
+    margin-left: 0px;
+    background-color: rgba(59, 57, 57, 0.329);
+    width:300px;
+    height:100px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.att{
+    font-family: Source Serif Pro;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-right: auto;
+}
