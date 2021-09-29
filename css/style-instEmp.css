@@ -1,0 +1,36 @@
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.regiao{
+    margin-top: 2em;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    width: 80vw;
+    background-color: white;
+    /* border: none; */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* retirar width e height */
+.corpo .box {
+    color: #2E4231;
+    position: absolute;
+    margin-top: 20px;
+    width: 80%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(254, 254, 254, 0.60);
+    border-radius: 15px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+
