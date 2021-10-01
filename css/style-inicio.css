@@ -1,14 +1,11 @@
-.conteudo {
-    width: 100vw;
-    height: 90vh;
+.container {
+    margin-top: 5vw;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .txtInicio {
-    display: table-cell;
     float: left;
     width: 50vw;
     font-size: 33px;
@@ -18,7 +15,6 @@
 }
 
 .imgInicio {
-    display: table-cell;
     float: left;
 }
 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/style-login.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Oleo+Script&display=swap');
+    </style>
     <title>Login</title>
 </head>
 <body>
@@ -19,34 +22,34 @@
             </ul>
         </nav>
     </header>
-    
-    <div class="box">
-        <h2>Login</h2>
-        <br><br>
-        <form method="post" action="/">
-            <div class="campo">
-                <input type="email" name="email" id="email" class="entrada" required>
-                <label for="email" class="nomeCampo">Email</label>
-            </div><br>
-            <br>
-
-            <div class="campo">
-                <input id="senha" name="senha" type="password" class="entrada" required>
-                <label for="senha" class="nomeCampo">Senha</label>
-            </div><br>
-            
-            <br>
-            <button type="submit" name="entrar" id="conclui">Entrar</button><br>
-            <br>
-            
-            <div class="registro">
-                Ainda não tem conta?
+    <div class="container">
+        <div class="box">
+            <h2>Login</h2>
+            <br><br>
+            <form method="post" action="/">
+                <div class="campo">
+                    <input type="email" name="email" id="email" class="entrada" required>
+                    <label for="email" class="nomeCampo">Email</label>
+                </div><br>
                 <br>
-                <a href="/cadastro">Cadastre-se</a>
-            </div>
-        </form>
-        </br>
-    </div>
 
+                <div class="campo">
+                    <input id="senha" name="senha" type="password" class="entrada" required>
+                    <label for="senha" class="nomeCampo">Senha</label>
+                </div><br>
+                
+                <br>
+                <button type="submit" name="entrar" id="conclui">Entrar</button><br>
+                <br>
+                
+                <div class="registro">
+                    Ainda não tem conta?
+                    <br>
+                    <a href="/cadastro">Cadastre-se</a>
+                </div>
+            </form>
+            </br>
+        </div>
+    </div>
 </body>
 </html>

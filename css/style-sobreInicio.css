@@ -1,13 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .conteudo {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.35);;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: max-content;
+    margin-top: 50px;
+    background-color: rgba(254, 254, 254, 0.7);
+    border-radius: 15px;
 }
 
 .parteCima .parteBaixo{
@@ -51,19 +58,4 @@
 .imgInicio1 {
     display: table-cell;
     float: right;
-}
-
-.fundo {
-    color: #2E4231;
-    margin-top: 50px;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    width: 35%;
-    height: 65%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(254, 254, 254, 1);
-    align-items: center;
-    border-radius: 15px;
 }
