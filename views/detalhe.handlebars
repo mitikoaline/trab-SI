@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style-detalhe.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Oleo+Script&display=swap');
+    </style>
+    <title>Detalhes</title>
+</head>
+<body>
+    <header>
+        <a class="logo">SICLO</a>
+        <nav>
+            <ul class="navlinks">
+                <li><a class="cta" href="/">Inicio</a></li>
+                <li><a class="cta" href="../sobreInicio">Sobre</a></li>
+                <li><a class="cta" href="../empresas">Empresas</a></li>
+                <li><a class="cta" href="../instituicoes">Instituições</a></li>
+                <li><a class="cta_link">Perfil</a></li>
+                <li><a class="cta" href="../logout">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <div class="container">
+
+            <div class="ladoEsq">
+                <figure>
+                    <img src="../css/img-up.png" alt="lar dos velhinhos">
+                </figure>
+                <a href="" id="botao"><button name="saibaMais" id="saibaMais">Saiba mais</button></a>
+        
+            </div>
+            {{#each usuarios}}
+            <div class="ladoDir">
+                <h1>{{nome}}</h1>
+                <br><br>
+                <p>{{detalhe}}
+                </p>
+                <br>
+                <div class="detalhes">
+                    <div class="campo">
+                        <label for="telefone" class="nomeCampo">Telefone para contato:</label>
+                        <input type="tel" name="telefone" id="telefone" class="entrada" placeholder="{{telefone}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="endereco" class="nomeCampo">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" class="entrada" placeholder="{{endereco}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="email" class="nomeCampo">Email:</label>
+                        <input type="email" name="email" id="email" class="entrada" placeholder="{{email}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="produto">Produto(s) que deseja receber/doar:</label>
+                        <br>
+                        <textarea rows="5" cols="50" id="produto" class="entrada" name="produto" placeholder="{{produto}}" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            
+        </div> 
+    </div>
+    <div class="botaoVoltar">
+        <a href="../instituicoes"><button name="voltar" id="voltar">Voltar</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style-perfil.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Oleo+Script&display=swap');
+    </style>
+    <title>Perfil</title>
+</head>
+<body>
+    <header>
+        <a class="logo">SICLO</a>
+        <nav>
+            <ul class="navlinks">
+                <li><a class="cta" href="/">Inicio</a></li>
+                <li><a class="cta" href="../sobreInicio">Sobre</a></li>
+                <li><a class="cta" href="../empresas">Empresas</a></li>
+                <li><a class="cta" href="../instituicoes">Instituições</a></li>
+                <li><a class="cta_link" href="../perfil">Perfil</a></li>
+                <li><a class="cta" href="../logout">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box">
+        <div class="container">
+            {{#each usuarios}}
+            <div class="ladoEsq">
+                <figure>
+                    <img src="../css/img-up.png" alt="lar dos velhinhos">
+                </figure>
+                <h2>{{nome}}</h2>
+                <input type="text" name="tipo" id="tipo" class="entrada" placeholder="{{representa}}" readonly>
+            </div>
+            <div id="linha-vertical"></div>
+            <div class="ladoDir">
+                <h1>Perfil</h1>
+                <br><br>
+                <div class="detalhes">
+                    <div class="campo">
+                        <label for="nome" class="nomeCampo">Nome da Empresa/Instituição</label>
+                        <input type="tel" name="telefone" id="telefone" class="entrada" placeholder="{{nome}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone" class="nomeCampo">Telefone para contato</label>
+                        <br>
+                        <input type="tel" name="telefone" id="telefone" class="entrada" placeholder="{{telefone}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="email" class="nomeCampo">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" class="entrada" placeholder="{{email}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="endereco" class="nomeCampo">Endereço</label>
+                        <br>
+                        <input type="text" name="endereco" id="endereco" class="entrada" placeholder="{{endereco}}" required readonly>
+                    </div>
+                    <div class="campo">
+                        <label for="produto">Produto(s) que deseja receber/doar</label>
+                        <br>
+                        <textarea rows="5" cols="50" id="produto" class="entrada" name="produto" placeholder="{{produto}}" readonly></textarea>
+                    </div>
+                </div>
+            </div> 
+            {{/each}}
+        </div> 
+    </div>
+    <div class="botaoEditar">
+        <a href="../editarPerfil"><button name="editar" id="editar">Editar perfil</button></a>
+    </div>
+</body>
+</html>

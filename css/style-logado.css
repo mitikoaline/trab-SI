@@ -1,0 +1,59 @@
+img {
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 5px solid#86A693;
+    width: 400px;
+}
+
+.ladoDir{
+    margin-top: -340px;
+    text-align: center;
+    width: 700px;
+    margin-left: 10cm;
+    padding-left: 4.2cm;
+}
+
+.ladoEsq {
+    text-align: left;
+    width: 50%;
+}
+
+.pagination a:hover:not(.active){
+    background-color: white;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    font-size: 40px;
+    float: down;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active{
+    background-color: white;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.aux{
+    font-size: 30px;
+}
+
+.setas{
+    margin-top: 60px;
+    width: 1300px;
+    text-align: right;
+}
+
+p.detalhe{
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: 300;
+}

@@ -17,20 +17,34 @@
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* retirar width e height */
-.corpo .box {
+.box {
     color: #2E4231;
-    position: absolute;
-    margin-top: 20px;
-    width: 80%;
+    margin-top: -15px;
+    width: 81%;
     height: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     background-color: rgba(254, 254, 254, 0.60);
     border-radius: 15px;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
+a.entrada {
+    justify-content:space-around;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
 
+table {
+    width: 100%;
+    padding: 10px;
+}
+
+.linha {
+    background-color: #86A693;
+}
+
+#infos {
+    font-size: 15px;
+}
