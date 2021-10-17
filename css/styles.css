@@ -1,0 +1,131 @@
+body{
+    font-family: Source Serif Pro;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.navlinks{
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+}
+
+.navlinks li{
+    padding: 0px 20px;
+}
+
+.logo{
+    color: #0F6C29;
+    font-family: "Merienda One";
+    font-size: 50px;
+    margin-left: -80px;
+    margin-right: auto;
+}
+
+.cta{
+    font-family: Source Serif Pro;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 40px 10px 40px;
+}
+
+.cta_link{
+    font-family: Source Serif Pro;
+    font-weight: 300;
+    color: #268133;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    text-decoration: underline;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 40px 10px 40px;
+}
+
+.cta:hover{
+    color: #268133;
+    text-decoration: underline;
+}
+
+h1{
+    margin-top: 12px;
+    margin-bottom: -12px;
+    font-size: 50px;
+    font-weight: 400;
+    font-weight:bold;
+}
+
+h2{
+    font-size: 40px;
+    font-family: Source Serif Pro;
+    font-weight: 200;
+}
+
+a:link{
+    color: #2E4231;
+}
+
+p{
+    margin-top: 12px;
+}
+
+.p2{
+    margin-top: 33px;
+}
+
+
+.botao{
+    position: absolute;
+}
+
+.updates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.update{
+    margin-top: 40px;
+    margin-left: 0px;
+    background-color: rgba(196, 196, 196, 0.363);
+    width: 1330px;
+    height:345px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.att{
+    font-family: Source Serif Pro;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+
+.att2{
+    font-family: Source Serif Pro;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    margin-right: auto;
+}

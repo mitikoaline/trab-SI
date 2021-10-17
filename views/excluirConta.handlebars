@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style-excluirConta.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Oleo+Script&display=swap');
+    </style>
+    <title>Empresas</title>
+</head>
+<body>
+    <header>
+        <a class="logo">SICLO</a>
+        <nav>
+            <ul class="navlinks">
+                <li><a class="cta" href="/">Inicio</a></li>
+                <li><a class="cta" href="../sobreInicio">Sobre</a></li>
+                <li><a class="cta" href="../empresas">Empresas</a></li>
+                <li><a class="cta" href="../instituicoes">Instituições</a></li>
+                <li><a class="cta" href="../perfil">Perfil</a></li>
+                <li><a class="cta" href="../logout">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h1>Tem certeza que deseja excluir sua conta?</h1>
+            <br>
+            <p>Essa ação não poderá ser desfeita. Ao excluir sua conta, todo seu registro será
+                apagado e você não terá mais acesso as funcionalidades do site.
+            </p>
+            <h2>Por favor, digite sua senha para confirmar a ação:</h2>
+            <div class="campo">
+                <input id="senha" name="senha" type="password" class="entrada" required>
+                <label for="senha" class="nomeCampo">Senha</label>
+                <a href=""><button name="excluir" id="excluir">Excluir conta</button></a>
+                <br><br>
+                <a href="../editarPerfil" id="voltar"><u>Voltar</u></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

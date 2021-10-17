@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style-logado.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Oleo+Script&display=swap');
+    </style>
+    <title>Inicio - Logado</title>
+</head>
+<body>
+    <header>
+        <a class="logo">SICLO</a>
+        <nav>
+            <ul class="navlinks">
+                <li><a class="cta_link" href="/">Inicio</a></li>
+                <li><a class="cta" href="../sobreInicio">Sobre</a></li>
+                <li><a class="cta" href="../empresas">Empresas</a></li>
+                <li><a class="cta" href="../instituicoes">Instituições</a></li>
+                <li><a class="cta" href="../perfil">Perfil</a></li>
+                <li><a class="cta" href="../logout">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    {{#each usuario}}
+    <div class = "updates">
+        <div class="topo">
+            <p>
+                <h2>
+                    Seja bem vindo(a) ao SICLO, <br>
+                    {{nome}}!</br>
+                </h2>
+            </p>
+        </div>
+    </div>
+    {{/each}}
+
+    
+    <div class = "update">
+        <div class="ladoEsq">
+            <figure>
+                <img src="../css/inicio3.png">
+            </figure>
+        </div>
+
+        <div class="ladoDir">
+            <h2>
+                <p class="titulo"><u> {{jorge}} </u/u></p>
+            </h2>
+            <p class="detalhe">
+                {{det}}
+            </p>
+        </div>
+
+        <div class="setas">
+            <div class="pagination">
+                <a class="aux" href="/inicio/{{menos}}">❮</a>
+                <a class="aux" href="/inicio/{{mais}}">❯</a>
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
