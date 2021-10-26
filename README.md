@@ -1,6 +1,8 @@
-# Sistemas da Informação - UnB(2021/1)
+# Sistemas de Informação - UnB(2021/1)
 
-Trabalho final da disciplina sistemas da informação.
+Trabalho final da disciplina sistemas de informação. <br>
+Universidade de Brasília. <br>
+2021/1.
 
 ## Alunos:
 - Aline Mitiko
